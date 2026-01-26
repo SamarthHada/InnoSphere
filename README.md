@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/24865605/README.md)
 # InnoSphere Gujarat  
 **Research, IPR & Start-up Ecosystem**
 
