@@ -1,9 +1,9 @@
-# InnoSphere Gujarat  
+# InnoSphere 
 **Research, IPR & Start-up Ecosystem**
 
 ## Project Overview
 **InnoSphere Gujarat** is a web-based academic project aimed at designing a unified platform to support the monitoring and management of **research activities, intellectual property rights (IPR), innovation, and start-ups** within the Gujarat innovation ecosystem.  
-The project is developed as part of the **Minor Project (BTCS607N)** and focuses on system analysis, design, and prototype-level implementation.
+The project focuses on system analysis, design, and prototype-level implementation.
 
 ---
 
@@ -27,10 +27,10 @@ The project is developed as part of the **Minor Project (BTCS607N)** and focuses
 
 ## Project Structure
 ```
-InnoSphere-Gujarat/
+InnoSphere- /
 │
 ├── docs/            # Project documents, reports, UML diagrams
-├── src/             # Source code (to be added)
+├── src/             # Source code 
 ├── README.md        # Project documentation
 └── .gitignore
 ```
