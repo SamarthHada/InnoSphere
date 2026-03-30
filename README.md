@@ -17,8 +17,8 @@ The project focuses on system analysis, design, and prototype-level implementati
 
 ## Tech Stack 
 - **Frontend:** HTML, CSS, JavaScript  
-- **Backend:** To be decided (Java / Node.js / Python)  
-- **Database:** MySQL / PostgreSQL (conceptual)  
+- **Backend:** Python  
+- **Database:** MongoDB  
 - **Tools:**  
   - Git & GitHub (Version Control)  
   - Jira (Scrum framework for sprint planning and tracking)  
