@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InnoSphere Gujarat</title>
+</head>
+<body>
+  <h2>Submit Research Project</h2>
+  <form id="projectForm">
+    <input type="text" id="title" placeholder="Title" required><br><br>
+    <input type="text" id="domain" placeholder="Domain" required><br><br>
+    <textarea id="description" placeholder="Description" required></textarea><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>Check Status</h3>
+  <input type="number" id="projectId" placeholder="Project ID">
+  <button onclick="getStatus()">Get Status</button>
+
+  <pre id="output"></pre>
+
+  <script>
+    document.getElementById("projectForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const data = {
+        title: document.getElementById("title").value,
+        domain: document.getElementById("domain").value,
+        description: document.getElementById("description").value
+      };
+
+      const res = await fetch("http://127.0.0.1:5000/api/projects/submit", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.json();
+      document.getElementById("output").innerText = JSON.stringify(result, null, 2);
+    });
+
+    async function getStatus() {
+      const id = document.getElementById("projectId").value;
+      const res = await fetch("http://127.0.0.1:5000/api/projects/status/" + id);
+      const result = await res.json();
+      document.getElementById("output").innerText = JSON.stringify(result, null, 2);
+    }
+  </script>
+</body>
+</html>
