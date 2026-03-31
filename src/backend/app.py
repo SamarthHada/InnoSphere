@@ -1,5 +1,5 @@
 from flask import Flask
-from backend.controllers.project_controller import submit_project, get_project_status
+from controllers.project_controller import submit_project, get_project_status
 
 app = Flask(__name__)
 
